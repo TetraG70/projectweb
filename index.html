@@ -1,0 +1,43 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Genres Viewer</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <h1 class="head">Explore Art Genres</h1>
+
+    <section class="home-section">
+        <h1 class="home moving-text"><strong>to the Art Genres Viewer</strong></h1>
+        <p class="text1">
+            Explore different art genres and discover the beauty of paintings, sculptures, potrait drawing,
+            Abstract and figurativeabstract
+            <br>
+            <strong class="text2">Click on the images to view more details about each art genre.</stron>
+           
+        </p>
+    </section>
+    <section>
+        <div class="art-genre-container">
+            <img src="images/art1.jpg" alt="Painting" class="art-genre" onclick="openGenrePage('painting')">
+            <button></button>
+            <img src="images/sculp.jpg" alt="Sculpture" class="art-genre" onclick="openGenrePage('sculpture')">
+            <img src="images/potrait.jpg" alt="Photography" class="art-genre" onclick="openGenrePage('potrait')">
+            <!-- Add more art genres as needed -->
+        </div>
+    </section>
+    
+    <section>
+        <div class="art-genre-container">
+            <img src="images/figqb.jpg" alt="figurativeabstract" class="art-genre" onclick="openGenrePage('figurativeabstract')">
+            <img src="images/figratuve.jpg" alt="figurative" class="art-genre" onclick="openGenrePage('figurative')">
+            <img src="images/abstrct.jpg" alt="abstrct" class="art-genre" onclick="openGenrePage('Abstract')">
+        </div>
+    </section>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

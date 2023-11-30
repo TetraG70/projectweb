@@ -1,0 +1,94 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:gray;
+}
+.head {
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Keyframes for the moving text animation with color variations */
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+        color: #ff5733; /* Initial color */
+    }
+    25% {
+        transform: translateX(0);
+        color: #33ff57; /* Color variation at 25% */
+    }
+    50% {
+        transform: translateX(-10px);
+        color: #5733ff; /* Color variation at 50% */
+    }
+    75% {
+        transform: translateX(0);
+        color: #ff5733; /* Color variation at 75% */
+    }
+    100% {
+        transform: translateX(100%);
+        color: #33ff57; /* Final color */
+    }
+}
+
+
+/* Apply the animation to the home paragraph with a different class */
+.moving-text {
+    animation: moveText 8s infinite; ;/* Adjust the duration as needed */
+    font-size: 36px;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.art-genre-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.art-genre {
+    cursor: pointer;
+    transition: transform 0.3s;
+    width: 200px;;
+    height: auto;
+}
+.text1{
+    color: rgb(98, 215, 9);
+    font-size: 36px;
+}
+.text2
+{
+    color: #5733ff;
+}
+
+.home-section {
+   background-image: url('images/art.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    height: 500px;
+    text-align: center;
+    padding: 100px 0;
+    color: #f0f0f0;
+}
+.art-genre:hover {
+    transform: scale(1.1);
+}
+
+/* Add space between sections */
+section {
+    margin-bottom:150px;
+}
+
+
